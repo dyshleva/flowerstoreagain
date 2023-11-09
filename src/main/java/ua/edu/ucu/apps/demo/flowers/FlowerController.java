@@ -26,7 +26,7 @@ public class FlowerController {
     }
 
     @PostMapping("/add")
-    public void addFlower(@RequestBody Flower flower) {
+    public void addFlower(Flower flower) {
         flowerService.add(flower);
     }
 }
