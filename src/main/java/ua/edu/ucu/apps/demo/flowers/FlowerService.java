@@ -1,12 +1,11 @@
 package ua.edu.ucu.apps.demo.flowers;
 
 import java.util.List;
-import lombok.Getter;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-@Getter
 public class FlowerService {
     private FlowerRepository flowerRepository;
 

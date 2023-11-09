@@ -1,1 +1,0 @@
-INSERT INTO postgres (price, sepalLength, color)
