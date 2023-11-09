@@ -1,6 +1,6 @@
 package ua.edu.ucu.apps.demo;
 
-import org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 import org.junit.jupiter.api.Test;
 import ua.edu.ucu.apps.demo.decorators.PaperDecorator;
 import ua.edu.ucu.apps.demo.decorators.RibbonDecorator;
