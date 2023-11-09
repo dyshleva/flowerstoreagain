@@ -1,6 +1,6 @@
 package ua.edu.ucu.apps.demo;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ua.edu.ucu.apps.demo.decorators.PaperDecorator;
 import ua.edu.ucu.apps.demo.decorators.RibbonDecorator;
@@ -12,12 +12,12 @@ class Decorators {
     @Test
     public void configSuccess() {
         Item tree = new PaperDecorator(new Flower());
-        assertEquals(tree.getDescription(),
+        Assertions.assertEquals(tree.getDescription(),
                 "Flower in paper");
 
         Item treeNew = new RibbonDecorator(new PaperDecorator(
             new PaperDecorator(new Flower())));
-        assertEquals(treeNew.getDescription(),
+        Assertions.assertEquals(treeNew.getDescription(),
                 "Flower in paper in paper in ribbon");
     }
 
