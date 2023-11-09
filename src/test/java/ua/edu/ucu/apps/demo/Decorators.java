@@ -11,11 +11,12 @@ class Decorators {
 
     @Test
     public void configSuccess() {
-        Item tree= new PaperDecorator(new Flower());
+        Item tree = new PaperDecorator(new Flower());
         assertEquals(tree.getDescription(),
                 "Flower in paper");
 
-        Item treeNew = new RibbonDecorator(new PaperDecorator(new PaperDecorator(new Flower())));
+        Item treeNew = new RibbonDecorator(new PaperDecorator(
+            new PaperDecorator(new Flower())));
         assertEquals(treeNew.getDescription(),
                 "Flower in paper in paper in ribbon");
     }
